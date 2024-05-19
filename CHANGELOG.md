@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: first
+* TODO: Refactoring and Formatting code
