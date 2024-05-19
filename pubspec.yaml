@@ -1,7 +1,8 @@
 name: flutter_buttombar_chung
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://chung-hong-hao.web.app
+repository: https://github.com/username/repository
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
