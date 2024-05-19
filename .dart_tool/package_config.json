@@ -158,13 +158,13 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "flutter_login",
+      "name": "flutter_buttombar_chung",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-17T22:49:40.270711Z",
+  "generated": "2024-05-19T13:45:29.815509Z",
   "generator": "pub",
   "generatorVersion": "3.3.1"
 }
