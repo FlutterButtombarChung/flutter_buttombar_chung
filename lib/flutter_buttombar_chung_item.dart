@@ -13,10 +13,6 @@ abstract class FlutterButtombarChungItem {
   const FlutterButtombarChungItem({
     required this.child,
     this.label,
-    this.labelStyle, 
+    this.labelStyle,
   });
 }
-
-
-
-
