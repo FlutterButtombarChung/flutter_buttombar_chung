@@ -1,3 +1,4 @@
-## 0.0.1
+## 0.0.2
 
-* TODO: Refactoring and Formatting code
+* TODO: Fixed bug
+* TODO: update doc
