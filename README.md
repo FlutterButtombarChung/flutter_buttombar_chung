@@ -54,17 +54,17 @@ https://github.com/CHUNG-HAO/flutter_buttombar_chung/assets/67829896/74d96d27-b2
           items: <FlutterButtombarChungItem>[
             FlutterButtombarChungItem(
               icon: Icons.home,
-              label: 'Home',
+              label: '',
               labelStyle: TextStyle(color: Colors.white),
             ),
             FlutterButtombarChungItem(
               icon: Icons.search,
-              label: 'Search',
+              label: '',
               labelStyle: TextStyle(color: Colors.white),
             ),
             FlutterButtombarChungItem(
               icon: Icons.person,
-              label: 'Profile',
+              label: '',
               labelStyle: TextStyle(color: Colors.white),
             ),
           ],
