@@ -10,9 +10,12 @@ abstract class FlutterButtombarChungItem {
   /// TextStyle for [label].
   final TextStyle? labelStyle;
 
+  final IconData? icon;
+
   const FlutterButtombarChungItem({
     required this.child,
     this.label,
     this.labelStyle,
+    this.icon
   });
 }
