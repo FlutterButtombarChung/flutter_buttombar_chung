@@ -1,21 +1,27 @@
 import 'package:flutter/material.dart';
 
-abstract class FlutterButtombarChungItem {
-  /// Icon of [FlutterButtombarChungItem].
+class MyButtombarChungItem extends FlutterButtombarChungItem {
+  MyButtombarChungItem({
+    required Widget child,
+    String? label,
+    TextStyle? labelStyle,
+    IconData? icon,
+    required String title,
+  }) : super(child: child, label: label, labelStyle: labelStyle, icon: icon, title: title);
+}
+
+class FlutterButtombarChungItem {
   final Widget child;
-
-  /// Text of [FlutterButtombarChungItem].
   final String? label;
-
-  /// TextStyle for [label].
   final TextStyle? labelStyle;
-
   final IconData? icon;
+  final String title;
 
-  const FlutterButtombarChungItem({
+  FlutterButtombarChungItem({
     required this.child,
     this.label,
     this.labelStyle,
-    this.icon
+    this.icon,
+    required this.title,
   });
 }

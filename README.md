@@ -26,7 +26,7 @@ Add the following dependency in your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_buttombar_chung: ^0.0.4
+  flutter_buttombar_chung: ^0.0.5
 ```
 
 ## Usage
