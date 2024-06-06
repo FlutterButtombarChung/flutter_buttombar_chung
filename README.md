@@ -26,7 +26,7 @@ Add the following dependency in your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_buttombar_chung: ^0.0.5
+  flutter_buttombar_chung: ^0.0.6
 ```
 
 ## Usage
@@ -80,7 +80,7 @@ https://github.com/CHUNG-HAO/flutter_buttombar_chung/assets/67829896/74d96d27-b2
 ```MIT
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) [2024] [Chris Chung]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

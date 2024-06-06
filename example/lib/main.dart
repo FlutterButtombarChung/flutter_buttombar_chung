@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainPage(initialIndex: 1,), 
+      home: MainPage(
+        initialIndex: 1,
+      ),
     );
   }
 }
@@ -23,7 +25,7 @@ class MainPage extends StatefulWidget {
   final int initialIndex;
 
   MainPage({required this.initialIndex});
-  
+
   @override
   _MainPageState createState() => _MainPageState();
 }
@@ -38,7 +40,8 @@ class _MainPageState extends State<MainPage> {
       bottomNavigationBar: FlutterButtomBarChung(
         backgroundColor: Color(0xFF7EC4CF),
         items: <FlutterButtombarChungItem>[
-          FlutterButtombarChungItem(child: Icon(Icons.psychology_rounded), title: ''),
+          FlutterButtombarChungItem(
+              child: Icon(Icons.psychology_rounded), title: ''),
           FlutterButtombarChungItem(child: Icon(Icons.home), title: ''),
           FlutterButtombarChungItem(child: Icon(Icons.wechat), title: ''),
         ],

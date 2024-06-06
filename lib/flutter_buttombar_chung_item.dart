@@ -7,7 +7,12 @@ class MyButtombarChungItem extends FlutterButtombarChungItem {
     TextStyle? labelStyle,
     IconData? icon,
     required String title,
-  }) : super(child: child, label: label, labelStyle: labelStyle, icon: icon, title: title);
+  }) : super(
+            child: child,
+            label: label,
+            labelStyle: labelStyle,
+            icon: icon,
+            title: title);
 }
 
 class FlutterButtombarChungItem {
