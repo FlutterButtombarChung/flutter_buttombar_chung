@@ -1,6 +1,6 @@
 name: flutter_buttombar_chung
 description: " The customized Flutter bottom navigation bar has a curved design and advanced functions, and has a wave-like effect, which is very smooth."
-version: 0.0.6
+version: 0.0.7
 homepage: https://chung-hong-hao.web.app
 repository: https://github.com/CHUNG-HAO/flutter_buttombar_chung
 
@@ -16,6 +16,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  test: ^1.24.9
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

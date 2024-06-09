@@ -31,6 +31,7 @@ class FlutterButtomBarChung extends StatefulWidget {
   /// Function which takes page index as argument and returns bool. If function
   /// returns false then page is not changed on button tap. It returns true by
   /// default.
+  // ignore: library_private_types_in_public_api
   final _LetIndexPage letIndexChange;
 
   /// Curves interpolating button change animation, default Curves.easeOut.
@@ -39,23 +40,24 @@ class FlutterButtomBarChung extends StatefulWidget {
   /// Duration of button change animation, default Duration(milliseconds: 600).
   final Duration animationDuration;
 
-  /// Height of [CurvedNavigationBar].
+  /// Height of [FlutterButtomBarChung].
   final double height;
 
   /// Padding of icon in floating button.
   final double iconPadding;
 
-  /// Check if [CurvedNavigationBar] has label.
+  /// Check if [FlutterButtomBarChung] has label.
   final bool hasLabel;
 
   FlutterButtomBarChung({
-    Key? key,
+    super.key,
     required this.items,
     this.index = 0,
     this.color = Colors.white,
     this.buttonBackgroundColor,
     this.backgroundColor = Colors.blueAccent,
     this.onTap,
+    // ignore: library_private_types_in_public_api
     _LetIndexPage? letIndexChange,
     this.animationCurve = Curves.easeOut,
     this.animationDuration = const Duration(milliseconds: 600),
@@ -65,8 +67,7 @@ class FlutterButtomBarChung extends StatefulWidget {
         assert(0 <= index && index < items.length),
         letIndexChange = letIndexChange ?? ((_) => true),
         height = height ?? (Platform.isAndroid ? 70.0 : 80.0),
-        hasLabel = items.any((item) => item.label != null),
-        super(key: key);
+        hasLabel = items.any((item) => item.label != null);
 
   @override
   FlutterButtomBarChungState createState() => FlutterButtomBarChungState();
@@ -189,9 +190,9 @@ class FlutterButtomBarChungState extends State<FlutterButtomBarChung>
                     position: _pos,
                     length: _length,
                     index: widget.items.indexOf(item),
-                    child: Center(child: item.child),
                     label: item.label,
                     labelStyle: item.labelStyle,
+                    child: Center(child: item.child),
                   );
                 }).toList(),
               ),

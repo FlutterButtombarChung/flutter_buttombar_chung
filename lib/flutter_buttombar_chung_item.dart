@@ -2,17 +2,12 @@ import 'package:flutter/material.dart';
 
 class MyButtombarChungItem extends FlutterButtombarChungItem {
   MyButtombarChungItem({
-    required Widget child,
-    String? label,
-    TextStyle? labelStyle,
-    IconData? icon,
-    required String title,
-  }) : super(
-            child: child,
-            label: label,
-            labelStyle: labelStyle,
-            icon: icon,
-            title: title);
+    required super.child,
+    super.label,
+    super.labelStyle,
+    super.icon,
+    required super.title,
+  });
 }
 
 class FlutterButtombarChungItem {

@@ -26,7 +26,7 @@ Add the following dependency in your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_buttombar_chung: ^0.0.6
+  flutter_buttombar_chung: ^0.0.7
 ```
 
 ## Usage
@@ -42,36 +42,22 @@ https://github.com/CHUNG-HAO/flutter_buttombar_chung/assets/67829896/74d96d27-b2
 
 
 ## Gatting start
-```dart
+```dart=
  bottomNavigationBar: FlutterButtomBarChung(
-          index: 0,
-          color: Colors.white,
-          buttonBackgroundColor: Colors.blue,
-          backgroundColor: Colors.blueAccent,
-          animationCurve: Curves.easeOut,
-          animationDuration: Duration(milliseconds: 600),
-          height: 70.0,
-          items: <FlutterButtombarChungItem>[
-            FlutterButtombarChungItem(
-              icon: Icons.home,
-              label: '',
-              labelStyle: TextStyle(color: Colors.white),
-            ),
-            FlutterButtombarChungItem(
-              icon: Icons.search,
-              label: '',
-              labelStyle: TextStyle(color: Colors.white),
-            ),
-            FlutterButtombarChungItem(
-              icon: Icons.person,
-              label: '',
-              labelStyle: TextStyle(color: Colors.white),
-            ),
-          ],
-          onTap: (index) {
-            
-          },
-        ),
+        backgroundColor: Color(0xFF7EC4CF),
+        items: <FlutterButtombarChungItem>[
+          FlutterButtombarChungItem(
+              child: Icon(Icons.psychology_rounded), title: ''),
+          FlutterButtombarChungItem(child: Icon(Icons.home), title: ''),
+          FlutterButtombarChungItem(child: Icon(Icons.wechat), title: ''),
+        ],
+        index: _currentIndex,
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+      ),
 ```
 
 

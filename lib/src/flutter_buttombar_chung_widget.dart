@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class FlutterButtombarChungWidget extends StatelessWidget {
@@ -11,7 +11,7 @@ class FlutterButtombarChungWidget extends StatelessWidget {
   final String? label;
   final TextStyle? labelStyle;
 
-  FlutterButtombarChungWidget({
+  const FlutterButtombarChungWidget({super.key, 
     required this.onTap,
     required this.position,
     required this.length,

@@ -3,10 +3,12 @@ import 'package:flutter_buttombar_chung/flutter_buttombar_chung.dart';
 import 'package:flutter_buttombar_chung/flutter_buttombar_chung_item.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainPage(
+      home: const MainPage(
         initialIndex: 1,
       ),
     );
@@ -24,9 +26,10 @@ class MyApp extends StatelessWidget {
 class MainPage extends StatefulWidget {
   final int initialIndex;
 
-  MainPage({required this.initialIndex});
+  const MainPage({Key? key, required this.initialIndex}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _MainPageState createState() => _MainPageState();
 }
 
@@ -38,12 +41,12 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: Container(),
       bottomNavigationBar: FlutterButtomBarChung(
-        backgroundColor: Color(0xFF7EC4CF),
+        backgroundColor: const Color(0xFF7EC4CF),
         items: <FlutterButtombarChungItem>[
           FlutterButtombarChungItem(
-              child: Icon(Icons.psychology_rounded), title: ''),
-          FlutterButtombarChungItem(child: Icon(Icons.home), title: ''),
-          FlutterButtombarChungItem(child: Icon(Icons.wechat), title: ''),
+              child: const Icon(Icons.psychology_rounded), title: ''),
+          FlutterButtombarChungItem(child: const Icon(Icons.home), title: ''),
+          FlutterButtombarChungItem(child: const Icon(Icons.wechat), title: ''),
         ],
         index: _currentIndex,
         onTap: (index) {
