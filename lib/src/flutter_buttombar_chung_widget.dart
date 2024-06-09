@@ -10,7 +10,8 @@ class FlutterButtombarChungWidget extends StatelessWidget {
   final String? label;
   final TextStyle? labelStyle;
 
-  const FlutterButtombarChungWidget({super.key, 
+  const FlutterButtombarChungWidget({
+    super.key,
     required this.onTap,
     required this.position,
     required this.length,

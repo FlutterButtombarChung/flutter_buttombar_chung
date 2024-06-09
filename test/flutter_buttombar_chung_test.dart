@@ -100,7 +100,8 @@ void main() {
     // Tap the second item and verify the animation is triggered
     await tester.tap(find.text('Search'));
     await tester.pump(); // Start the animation
-    await tester.pump(const Duration(milliseconds: 300)); // Halfway through animation
+    await tester
+        .pump(const Duration(milliseconds: 300)); // Halfway through animation
 
     // Verify intermediate animation state
     // Check for partial translation or opacity changes
