@@ -44,9 +44,9 @@ class _MainPageState extends State<MainPage> {
         backgroundColor: const Color(0xFF7EC4CF),
         items: <FlutterButtombarChungItem>[
           FlutterButtombarChungItem(
-              child: const Icon(Icons.psychology_rounded), title: ''),
-          FlutterButtombarChungItem(child: const Icon(Icons.home), title: ''),
-          FlutterButtombarChungItem(child: const Icon(Icons.wechat), title: ''),
+              child: const Icon(Icons.psychology_rounded)),
+          FlutterButtombarChungItem(child: const Icon(Icons.home)),
+          FlutterButtombarChungItem(child: const Icon(Icons.wechat)),
         ],
         index: _currentIndex,
         onTap: (index) {

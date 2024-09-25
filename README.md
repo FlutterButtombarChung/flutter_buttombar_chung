@@ -26,7 +26,7 @@ Add the following dependency in your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_buttombar_chung: ^0.0.9
+  flutter_buttombar_chung: ^0.1.0
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ import 'package:flutter_buttombar_chung/flutter_buttombar_chung.dart';
 ## DEMO
 
 
-https://github.com/CHUNG-HAO/flutter_buttombar_chung/assets/67829896/74d96d27-b21b-41c4-90eb-465ef08983e8
+![Screen Recording 2024-09-25 at 11 15 16 PM](https://github.com/user-attachments/assets/d445a4e7-4606-4b59-aa76-780624f3514a)
 
 
 ## Gatting start
@@ -47,9 +47,9 @@ https://github.com/CHUNG-HAO/flutter_buttombar_chung/assets/67829896/74d96d27-b2
         backgroundColor: Color(0xFF7EC4CF),
         items: <FlutterButtombarChungItem>[
           FlutterButtombarChungItem(
-              child: Icon(Icons.psychology_rounded), title: ''),
-          FlutterButtombarChungItem(child: Icon(Icons.home), title: ''),
-          FlutterButtombarChungItem(child: Icon(Icons.wechat), title: ''),
+              child: Icon(Icons.psychology_rounded)),
+          FlutterButtombarChungItem(child: Icon(Icons.home)),
+          FlutterButtombarChungItem(child: Icon(Icons.wechat)),
         ],
         index: _currentIndex,
         onTap: (index) {

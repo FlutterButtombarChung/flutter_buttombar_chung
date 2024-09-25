@@ -13,17 +13,14 @@ void main() {
       FlutterButtombarChungItem(
         child: const Icon(Icons.home),
         label: 'Home',
-        title: 'Home',
       ),
       FlutterButtombarChungItem(
         child: const Icon(Icons.search),
         label: 'Search',
-        title: 'Search',
       ),
       FlutterButtombarChungItem(
         child: const Icon(Icons.person),
         label: 'Profile',
-        title: 'Profile',
       ),
     ];
 
@@ -65,17 +62,14 @@ void main() {
       FlutterButtombarChungItem(
         child: const Icon(Icons.home),
         label: 'Home',
-        title: 'Home',
       ),
       FlutterButtombarChungItem(
         child: const Icon(Icons.search),
         label: 'Search',
-        title: 'Search',
       ),
       FlutterButtombarChungItem(
         child: const Icon(Icons.person),
         label: 'Profile',
-        title: 'Profile',
       ),
     ];
 

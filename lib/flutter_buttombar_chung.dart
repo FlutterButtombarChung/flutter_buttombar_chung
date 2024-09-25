@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter_buttombar_chung/flutter_buttombar_chung_item.dart';
 import 'package:flutter_buttombar_chung/src/flutter_buttombar_chung_widget.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +64,7 @@ class FlutterButtomBarChung extends StatefulWidget {
   })  : assert(items.isNotEmpty),
         assert(0 <= index && index < items.length),
         letIndexChange = letIndexChange ?? ((_) => true),
-        height = height ?? (Platform.isAndroid ? 70.0 : 80.0),
+        height = height ?? 70.0,
         hasLabel = items.any((item) => item.label != null);
 
   @override

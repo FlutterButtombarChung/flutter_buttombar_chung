@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 
 const s = 0.2;
@@ -20,9 +19,7 @@ class FlutterButtombarChungPainter extends CustomPainter {
     final span = 1.0 / itemsLength;
     final l = startingLoc + (span - s) / 2;
     loc = textDirection == TextDirection.rtl ? 0.8 - l : l;
-    bottom = hasLabel
-        ? (Platform.isAndroid ? 0.55 : 0.45)
-        : (Platform.isAndroid ? 0.6 : 0.5);
+    bottom = hasLabel ? 0.55 : 0.6;
   }
 
   @override

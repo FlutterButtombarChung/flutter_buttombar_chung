@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 
 class FlutterButtombarChungWidget extends StatelessWidget {
@@ -37,7 +36,7 @@ class FlutterButtombarChungWidget extends StatelessWidget {
       return Column(
         children: [
           Expanded(child: _buildIcon()),
-          SizedBox(height: Platform.isIOS ? 20.0 : 0),
+          const SizedBox(height: 0), // Removed Platform.isIOS check
         ],
       );
     }
@@ -51,7 +50,7 @@ class FlutterButtombarChungWidget extends StatelessWidget {
             child: Text(label ?? '', style: labelStyle),
           ),
         ),
-        SizedBox(height: Platform.isIOS ? 20.0 : 10.0),
+        const SizedBox(height: 10.0), // Removed Platform.isIOS check
       ],
     );
   }
